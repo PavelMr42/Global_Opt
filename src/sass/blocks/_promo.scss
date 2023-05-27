@@ -1,3 +1,85 @@
+.promo {
+  position: relative;
+  min-height: 680px;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -17px;
+    right: -17px;
+    top: -9px;
+    bottom: -335px;
+    z-index: -1;
+    background: url(../img/preview_background.jpg) center / cover no-repeat;
+    filter: blur(9px) brightness(30%);
+  }
+  &__slogan {
+    font-size: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 47px;
+  }
+  &__title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $main-color;
+    padding-top: 26px;
+    text-align: center;
+  }
+  &__subtitle {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 38px;
+  }
+  &__leftLine {
+    width: 380px;
+    border-bottom: 1px solid #ffffff;
+  }
+  &__rightLine {
+    width: 380px;
+    border-bottom: 1px solid #ffffff;
+  }
+  &__circle {
+    height: 10px;
+    width: 10px;
+    margin: 0 12px 0 12px;
+    background-color: #ffffff;
+    border-radius: 100%;
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__icon {
+    min-height: 150px;
+    width: 260px;
+    img {
+      display: block;
+      margin: 27px auto 0;
+    }
+  }
+  &__descr {
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #ffffff;
+    padding-top: 16px;
+  }
+}
 .header {
   position: relative;
   padding-top: 23px;
@@ -14,7 +96,7 @@
   &__menu {
     display: flex;
     justify-content: space-between;
-    padding: 37px 50px;
+    padding: 37px 30px;
     margin: 0;
     list-style-type: none;
     &-item {
