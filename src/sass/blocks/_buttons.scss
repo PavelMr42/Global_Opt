@@ -9,4 +9,13 @@
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  &-promo {
+    display: block;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    width: 230px;
+    height: 57px;
+    margin: 39px auto 81px;
+  }
 }
