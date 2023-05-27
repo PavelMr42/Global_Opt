@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.header {
+  position: relative;
+  padding-top: 23px;
+  display: flex;
+  justify-content: space-between; }
+  .header__logo {
+    width: 96px;
+    height: 100px;
+    cursor: pointer; }
+    .header__logo img {
+      width: 100%; }
+  .header__menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 50px;
+    margin: 0;
+    list-style-type: none; }
+    .header__menu-item {
+      border-right: 1px dotted #74757a;
+      padding: 0 12px 0 12px; }
+      .header__menu-item:last-child {
+        border: none; }
+    .header__menu-link {
+      position: relative;
+      font-size: 15px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #ffffff;
+      cursor: pointer; }
+      .header__menu-link:hover {
+        color: #ec644b;
+        transition: 0.35s; }
+      .header__menu-link::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0;
+        height: 1.5px;
+        transition: width 0.35s;
+        background-color: #ec644b; }
+      .header__menu-link:hover:before {
+        width: 100%; }
+  .header__contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px; }
+  .header__questions {
+    padding-right: 19px; }
+  .header__call {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: right; }
+  .header__phone {
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff; }
+
+.button {
+  width: 160px;
+  height: 40px;
+  background-color: #ec644b;
+  border: none;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

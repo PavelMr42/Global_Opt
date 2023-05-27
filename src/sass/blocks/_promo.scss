@@ -1,0 +1,73 @@
+.header {
+  position: relative;
+  padding-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    width: 96px;
+    height: 100px;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 50px;
+    margin: 0;
+    list-style-type: none;
+    &-item {
+      border-right: 1px dotted #74757a;
+      padding: 0 12px 0 12px;
+      &:last-child {
+        border: none;
+      }
+    }
+    &-link {
+      position: relative;
+      font-size: 15px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #ffffff;
+      cursor: pointer;
+      &:hover {
+        color: $main-color;
+        transition: 0.35s;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0; bottom: -5px;
+        width: 0;
+        height: 1.5px;
+        transition: width 0.35s;
+        background-color: $main-color;
+      }
+      &:hover:before {
+        width: 100%;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+  }
+  &__questions {
+    padding-right: 19px;
+  }
+  &__call {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: right;
+  }
+  &__phone {
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
