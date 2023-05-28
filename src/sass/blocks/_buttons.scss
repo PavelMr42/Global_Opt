@@ -9,6 +9,12 @@
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  transition: 0.45s all;
+  &:hover {
+    color: $main-color;
+    background-color: #ffffff;
+    border: 1px solid $main-color;
+  }
   &-promo {
     display: block;
     border-radius: 25px;
