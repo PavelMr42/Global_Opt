@@ -13,6 +13,34 @@ a {
   max-width: 1140px;
   margin: 0 auto; }
 
+.button {
+  width: 160px;
+  height: 45px;
+  background-color: #ec644b;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer; }
+  .button-promo {
+    display: block;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    width: 230px;
+    height: 57px;
+    margin: 39px auto 81px; }
+
+.title {
+  padding-top: 57px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2e2e2e; }
+
 .promo {
   position: relative;
   min-height: 680px;
@@ -68,7 +96,7 @@ a {
   .promo__icons {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: baseline; }
   .promo__icon {
     min-height: 150px;
     width: 260px; }
@@ -144,24 +172,35 @@ a {
     font-weight: 700;
     color: #ffffff; }
 
-.button {
-  width: 160px;
-  height: 40px;
-  background-color: #ec644b;
-  border: none;
-  border-radius: 15px;
-  font-size: 11px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
-  cursor: pointer; }
-  .button-promo {
-    display: block;
-    border-radius: 25px;
-    font-size: 15px;
+.advantages {
+  min-height: 590px;
+  background-color: #f3f3f3; }
+  .advantages__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 31px; }
+  .advantages__item {
+    display: flex;
+    width: 520px;
+    padding-right: 100px;
+    margin-top: 31px; }
+  .advantages__round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 17px;
+    width: 50px; }
+  .advantages__descr {
+    width: 520px; }
+  .advantages__subtitle {
+    font-size: 16px;
     font-weight: 700;
-    width: 230px;
-    height: 57px;
-    margin: 39px auto 81px; }
+    color: #ec644b;
+    margin-bottom: 5px; }
+  .advantages__text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #3a3a3a; }
 
 /*# sourceMappingURL=style.css.map */
