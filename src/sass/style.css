@@ -51,6 +51,11 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   color: #2e2e2e; }
+  .title-agent {
+    padding-top: 20px;
+    text-transform: none;
+    font-weight: 700;
+    color: #ffffff; }
 
 .promo {
   position: relative;
@@ -233,5 +238,35 @@ a {
     font-size: 14px;
     font-weight: 400;
     color: #3a3a3a; }
+
+.agent {
+  position: relative;
+  min-height: 342px;
+  overflow: hidden; }
+  .agent::before {
+    content: '';
+    position: absolute;
+    left: -17px;
+    right: -17px;
+    top: -30px;
+    bottom: -30px;
+    z-index: -1;
+    background: url(../img/agent_background.jpg) center/cover no-repeat;
+    filter: blur(6px) brightness(40%); }
+  .agent__icon {
+    width: 102px;
+    height: 102px;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 58px auto auto; }
+  .agent__descr {
+    text-align: center;
+    padding-top: 22px;
+    font-size: 19px;
+    font-weight: 300;
+    color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
