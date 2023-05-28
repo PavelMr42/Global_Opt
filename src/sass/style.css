@@ -13,6 +13,12 @@ a {
   max-width: 1140px;
   margin: 0 auto; }
 
+.divider {
+  padding-top: 20px;
+  border-bottom: 1px solid #ec644b;
+  width: 148px;
+  margin: 0 auto; }
+
 .button {
   width: 160px;
   height: 45px;
@@ -182,10 +188,10 @@ a {
   background-color: #f3f3f3; }
   .advantages__wrapper {
     display: grid;
-    grid-template: repeat(3, minmax(34px, auto))/repeat(2, 540px);
+    grid-template: repeat(3, minmax(33px, auto))/repeat(2, 540px);
     grid-auto-rows: 1fr;
     column-gap: 50px;
-    row-gap: 36px;
+    row-gap: 37px;
     padding-top: 30px; }
   .advantages__item {
     display: grid;
@@ -199,6 +205,33 @@ a {
   .advantages__text {
     font-size: 14px;
     font-weight: 300;
+    color: #3a3a3a; }
+
+.work {
+  min-height: 619px; }
+  .work__text {
+    text-align: center;
+    padding-top: 17px;
+    font-size: 21px;
+    font-weight: 400;
+    color: #2e2e2e; }
+  .work__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 37px; }
+  .work__item {
+    width: 360px; }
+  .work__subtitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ec644b;
+    padding-top: 20px; }
+  .work__descr {
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
     color: #3a3a3a; }
 
 /*# sourceMappingURL=style.css.map */
