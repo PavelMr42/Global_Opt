@@ -3,10 +3,10 @@
   background-color: #f3f3f3;
   &__wrapper {
     display: grid;
-    grid-template: repeat(3,minmax(34px,auto))/repeat(2,540px);
+    grid-template: repeat(3,minmax(33px,auto))/repeat(2,540px);
     grid-auto-rows: 1fr;
     column-gap: 50px;
-    row-gap: 36px;
+    row-gap: 37px;
     padding-top: 30px;
   }
   &__item {
