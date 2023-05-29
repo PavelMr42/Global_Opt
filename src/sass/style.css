@@ -46,7 +46,7 @@ a {
     width: 160px;
     height: 45px;
     margin: 25px auto auto; }
-  .button-submit {
+  .button-send {
     position: relative;
     display: block;
     width: 180px;
@@ -54,6 +54,11 @@ a {
     bottom: -20px;
     margin: 0 auto;
     z-index: 2; }
+  .button-question {
+    display: block;
+    width: 180px;
+    height: 45px;
+    margin: 15px auto auto; }
 
 .title {
   padding-top: 57px;
@@ -511,5 +516,76 @@ a {
     line-height: 22px;
     font-size: 14px;
     font-weight: 300; }
+
+.question {
+  padding: 69px 0 71px 0;
+  overflow: hidden;
+  min-height: 438px;
+  position: relative; }
+  .question__background {
+    position: absolute;
+    top: -145px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: url("../img/questions_background.jpg") center/cover no-repeat;
+    filter: brightness(40%); }
+  .question__form {
+    position: relative;
+    min-height: 295px;
+    width: 896px;
+    margin: 0 auto; }
+    .question__form-overlay {
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      opacity: .65;
+      position: absolute;
+      z-index: -1; }
+    .question__form-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+  .question input {
+    height: 45px;
+    width: 270px;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+    margin: 17px 5px 5px 0;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #101010; }
+  .question textarea {
+    height: 73px;
+    width: 825px;
+    resize: none;
+    border-radius: 10px;
+    padding: 20px 25px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #616467;
+    border: 1px solid rgba(0, 0, 0, 0.2); }
+  .question__header {
+    width: 100%;
+    min-height: 68px;
+    background-color: #25333c; }
+  .question__heading {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff; }
+  .question__subtitle {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
