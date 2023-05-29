@@ -5,13 +5,13 @@
   &::before {
     content: '';
     position: absolute;
-    left: -17px;
-    right: -17px;
-    top: -9px;
-    bottom: -335px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -470px;
     z-index: -1;
     background: url(../img/preview_background.jpg) center / cover no-repeat;
-    filter: blur(9px) brightness(30%);
+    filter: brightness(30%);
   }
   &__slogan {
     font-size: 24px;
