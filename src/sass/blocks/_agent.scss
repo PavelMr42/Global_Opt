@@ -5,13 +5,13 @@
   &::before {
     content: '';
     position: absolute;
-    left: -17px;
-    right: -17px;
-    top: -30px;
-    bottom: -30px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     z-index: -1;
     background: url(../img/agent_background.jpg) center / cover no-repeat;
-    filter: blur(6px) brightness(40%);
+    filter: brightness(40%);
   }
   &__icon {
     width: 102px;
