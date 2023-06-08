@@ -197,6 +197,15 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      &__overlay {
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        opacity: 0.95;
+      }
 
       &__menu {
         position: relative;
@@ -246,10 +255,9 @@
         flex-direction: column;
         border: none;
         top: 0;
-        left: -100%;
+        left: -200%;
         width: 400px;
         height: 100%;
-        background-color: #525050;
         transition: all 0.65s;
         z-index: 2;
 
@@ -274,12 +282,13 @@
       &__call {
         text-align: center;
       }
-
+      .button {
+        margin-top: 10px;
+      }
       &__phone {
         display: block;
         text-align: center;
         font-size: 19px;
-        padding-bottom: 10px;
       }
     }
 
@@ -410,6 +419,204 @@
 
     &__policy {
       margin-right: 130px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .promo {
+    &__leftLine {
+      width: 220px;
+    }
+    &__rightLine {
+      width: 220px;
+    }
+    &__items {
+      flex-wrap: wrap;
+    }
+    &__descr {
+      font-size: 14px;
+    }
+  }
+  .advantages {
+    &__wrapper {
+      grid-template: repeat(8,minmax(33px,auto))/repeat(1,380px);
+    }
+    &__item {
+      grid-template-columns: 50px 280px;
+    }
+  }
+  .agent {
+    &::before {
+      top: -10px;
+      bottom: -10px;
+    }
+  }
+  .price {
+    &__content {
+      grid-template: repeat(2,minmax(33px,auto))/repeat(1,266px);
+    }
+    &__form {
+      &::before {
+        top: 255px;
+      }
+      &-wrapper {
+        flex-wrap: wrap;
+        input {
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+  .managers {
+    &::before {
+      top: -20px;
+    }
+  }
+  .reviews {
+    &__slide {
+      width: 100%;
+    }
+    &__text {
+      font-size: 20px;
+    }
+    &-arrow__left {
+      display: none;
+    }
+    &-arrow__right {
+     display: none;
+    }
+    &__descr {
+      padding: 20px 60px;
+    }
+  }
+  .question {
+    &__background {
+      top: -10px;
+      bottom: -10px;
+    }
+    &__form {
+      width: 490px;
+      min-height: 420px;
+      &-wrapper {
+        flex-direction: column;
+        align-items: center;
+        textarea {
+          width: 385px;
+        }
+        input {
+          width: 385px;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+  .map {
+    &__window {
+      left: -2%;
+      &::before {
+        top: 40%;
+      }
+    }
+  }
+  .footer {
+    &__top {
+      align-items: center;
+      flex-direction: column;
+    }
+    &__subtitle {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 16px;
+    }
+    &__logo {
+      width: 75px;
+    }
+    &__call {
+      text-align: center;
+    }
+    &__phone {
+      text-align: center;
+    }
+    &__policy {
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 574px) {
+  .promo {
+    &__hamburger {
+      z-index: 2;
+    }
+    .header {
+      &__wrapper {
+        &-active {
+          width: 320px;
+        }
+      }
+      &__menu {
+        &-link {
+          font-size: 25px;
+        }
+      }
+      &__close {
+        top: 10%;
+        left: 80%;
+      }
+    }
+    &__title {
+      font-size: 36px;
+    }
+    &__leftLine {
+      width: 100px;
+    }
+    &__rightLine {
+      width: 100px;
+    }
+  }
+  .advantages {
+    &__item {
+      grid-template-columns: 50px 220px;
+      padding: 0;
+    }
+    &__wrapper {
+      grid-template: repeat(9,minmax(33px,auto))/repeat(1,285px);
+    }
+  }
+  .work {
+    &__item {
+      width: 300px;
+    }
+  }
+  .price {
+    &__form {
+      &::before {
+        top: 310px;
+      }
+    }
+  }
+  .question {
+    &__form {
+      width: 100%;
+      input {
+        width: 300px;
+      }
+      textarea {
+        width: 300px;
+      }
+    }
+  }
+  .map {
+    &__window {
+     display: none;
+    }
+  }
+  .footer {
+     &__bottom {
+       justify-content: center;
+       flex-direction: column;
+     }
+    &__policy {
+      margin: 8px;
     }
   }
 }
