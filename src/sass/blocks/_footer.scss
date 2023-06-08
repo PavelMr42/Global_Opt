@@ -38,6 +38,23 @@
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
+    position: relative;
+    &:hover {
+      transition: all 0.35s;
+      color: $main-color;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0; bottom: -5px;
+      width: 0;
+      height: 1.5px;
+      transition: width 0.35s;
+      background-color: $main-color;
+    }
+    &:hover:before {
+      width: 100%;
+    }
   }
   &__bottom {
     display: flex;

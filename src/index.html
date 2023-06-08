@@ -11,18 +11,26 @@
 <body>
 <section class="promo">
     <div class="container">
+        <div class="promo__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <header class="header">
             <div class="header__logo">
                 <a href="#"><img src="icons/logo.png" alt="logo"></a>
             </div>
-            <ul class="header__menu">
-                <li class="header__menu-item"><a href="#" class="header__menu-link">Преимущества</a></li>
-                <li class="header__menu-item"><a href="#" class="header__menu-link">Наша работа</a></li>
-                <li class="header__menu-item"><a href="#" class="header__menu-link">Цены</a></li>
-                <li class="header__menu-item"><a href="#" class="header__menu-link">Схема работы</a></li>
-                <li class="header__menu-item"><a href="#" class="header__menu-link">Отзывы</a></li>
-                <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
-            </ul>
+            <nav class="header__wrapper">
+                <div class="header__close"></div>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Преимущества</a></li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Наша работа</a></li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Цены</a></li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Схема работы</a></li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Отзывы</a></li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+                </ul>
+            </nav>
             <div class="header__contacts">
                 <div class="header__questions">
                     <div class="header__call">Есть вопросы?</div>
@@ -39,22 +47,30 @@
             <div class="promo__circle"></div>
             <div class="promo__rightLine"></div>
         </div>
-        <div class="promo__icons">
-            <div class="promo__icon">
-                <img src="icons/services/1_oversized_cargo_icon.png" alt="oversized_cargo">
+        <div class="promo__items">
+            <div class="promo__item">
+                <div class="promo__icon">
+                    <img src="icons/services/1_oversized_cargo_icon.png" alt="oversized_cargo">
+                </div>
                 <p class="promo__descr">Перевозка негабаритных и крупнотоннажных грузов</p>
             </div>
-            <div class="promo__icon">
-                <img src="icons/services/2_verification_icon.png" alt="erification">
+            <div class="promo__item">
+                <div class="promo__icon">
+                    <img src="icons/services/2_verification_icon.png" alt="erification">
+                </div>
                 <p class="promo__descr">Самостоятельно декларируем и проводим таможенную очистку с оптимизацией кодов и
                     ставок</p>
             </div>
-            <div class="promo__icon">
-                <img src="icons/services/3_direct_deliveries_icon.png" alt="direct_deliveries">
+            <div class="promo__item">
+                <div class="promo__icon">
+                    <img src="icons/services/3_direct_deliveries_icon.png" alt="direct_deliveries">
+                </div>
                 <p class="promo__descr">Осуществляем прямые поставки с заводов от двери до двери</p>
             </div>
-            <div class="promo__icon">
-                <img src="icons/services/4_express_delivery_icon.png" alt="express_delivery">
+            <div class="promo__item">
+                <div class="promo__icon">
+                    <img src="icons/services/4_express_delivery_icon.png" alt="express_delivery">
+                </div>
                 <p class="promo__descr">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг </p>
             </div>
         </div>
@@ -360,7 +376,7 @@
         </div>
     </div>
 </section>
-<section class="question">
+<div class="question">
     <div class="container">
         <div class="question__background"></div>
         <form action="#" class="question__form">
@@ -380,7 +396,7 @@
             <button class="button button-question">Отправить заявку</button>
         </form>
     </div>
-</section>
+</div>
 <section class="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2245.6057390242304!2d37.62464507721539!3d55.74797899236231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTXCsDQ0JzUyLjciTiAzN8KwMzcnMzguMCJF!5e0!3m2!1sru!2sru!4v1685371112831!5m2!1sru!2sru"
             allowfullscreen="" loading="lazy"
@@ -420,5 +436,7 @@
         </div>
     </div>
 </footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
