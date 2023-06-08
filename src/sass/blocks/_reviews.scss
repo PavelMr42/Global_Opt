@@ -4,11 +4,12 @@
     display: block;
     position: absolute;
     top: 23%;
-    transform: translateY(-50%);
-    left: 470px;
+    transform: translateY(-50%) translateX(-50%);
+    left: 38%;
     border: none;
     background-color: #fff;
     cursor: pointer;
+    width: 0;
   }
   &-arrow__right {
     display: block;
@@ -16,10 +17,10 @@
     border: none;
     background-color: #fff;
     top: 23%;
-    transform: translateY(-50%);
-    right: 470px;
+    transform: translateY(-50%) translateX(-50%) ;
+    right: 40%;
     cursor: pointer;
-    overflow: hidden;
+    width: 0;
   }
   &__text {
     text-align: center;

@@ -58,18 +58,18 @@
     background-color: #ffffff;
     border-radius: 100%;
   }
-  &__icons {
+  &__items {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
-  &__icon {
+  &__item {
     min-height: 150px;
     width: 260px;
-    img {
-      display: block;
-      margin: 27px auto 0;
-    }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   &__descr {
     text-align: center;
@@ -151,5 +151,23 @@
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
+    position: relative;
+    &:hover {
+      transition: all 0.35s;
+      color: $main-color;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0; bottom: -5px;
+      width: 0;
+      height: 1.5px;
+      transition: width 0.35s;
+      background-color: $main-color;
+    }
+    &:hover:before {
+      width: 100%;
+    }
+
   }
 }

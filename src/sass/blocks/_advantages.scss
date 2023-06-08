@@ -4,6 +4,7 @@
   &__wrapper {
     display: grid;
     grid-template: repeat(3,minmax(33px,auto))/repeat(2,540px);
+    justify-content: center;
     grid-auto-rows: 1fr;
     column-gap: 50px;
     row-gap: 37px;
